@@ -8,22 +8,33 @@
     html, body {
       margin: 0;
       width: 100%;
-      height: 100%;
+      min-height: 100%;
     }
 
     body {
+      min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
+      padding: 20px;
+      box-sizing: border-box;
     }
 
     img {
       display: block;
+      width: 40%;
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: 600px) {
+      img {
+        width: 90%;
+      }
     }
   </style>
 </head>
 <body>
-  <img src="macswierczek_stf_v3.png" alt="" width="40%">
+  <img src="macswierczek_stf_v3.png" alt="Save the date">
 </body>
 </html>
-
